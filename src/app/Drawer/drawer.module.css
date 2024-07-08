@@ -1,0 +1,56 @@
+.drawer {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -250px;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.drawer.open {
+    left: 0;
+}
+
+.drawer nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.drawer nav ul li {
+    padding: 8px 16px;
+    text-align: left;
+}
+
+.drawer nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.drawer nav ul li a:hover {
+    background-color: #575757;
+}
+
+.menuButton {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 8px 16px;
+}
+
+.closeButton {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 36px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
